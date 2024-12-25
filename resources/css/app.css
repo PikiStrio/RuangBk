@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahkan ke file CSS Anda */
+@keyframes zoomInOnLoad {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in-on-load {
+    animation: zoomInOnLoad 400ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.zoom-in-on-load2{
+    animation: zoomInOnLoad 400ms ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
