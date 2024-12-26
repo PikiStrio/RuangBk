@@ -15,10 +15,12 @@
     <div class="py-12">
         <section>
             <div class="flex max-w-7xl mx-auto flex-wrap">
-                <x-card-md images="24" title="Perfect Kalkulus" description="lorem ipsum lobnfashjk fsajfowe n"></x-card-md>
-                <x-card-md images="24" title="Perfect Kalkulus" description="lorem ipsum lobnfashjk fsajfowe nfsdajhfkjash uifweghfjasbddjkf hw8ofh sdjkhf weuhfuisdha afhkwhf8 weyrtiuqwfjhsdfjk wo fhsdjkbf wui rfbhjwekbf uwhfijwb qfejksdb cnsxbfhj asg fuiwehjsdhf wdfuiwey"></x-card-md>
-                <x-card-md images="24" title="Perfect Kalkulus" description="lorem ipsum lobnfashjk fsajfowe n"></x-card-md>
-                <x-card-md images="24" title="Perfect Kalkulus" description="lorem ipsum lobnfashjk fsajfowe n"></x-card-md>
+                <x-card-md images="Einstein" title="Physicist" description="Mechanics, Thermodynamics, Relativity"></x-card-md>
+                <x-card-md images="jeroe" title="Mathematician" description="Arithmetic, Algebra, Calculus"></x-card-md>
+                <x-card-md images="isaacNewton" title="Alchemist" description="Transmutation of Metals, Four Elements, Chemical Experiments"></x-card-md>
+                <x-card-md images="fiersa" title="Author" description="Writing Techniques, Research Skills, Language and Grammar"></x-card-md>
+                <x-card-md images="nikola" title="Electrical Engineer" description="Electrical Circuits, Power Systems, Power Electronics"></x-card-md>
+                <x-card-md images="wiliam" title="Playwright" description="lorem ipsum lobnfashjk fsajfowe n"></x-card-md>
             </div>
         </section>
 
