@@ -21,9 +21,7 @@
                     Indonesia</p>
                 <div class="flex gap-5">
                     <a href="{{ route('career') }}"
-                        class="py-3 px-7 my-4 bg-violet-800 text-white rounded-full text-xl font-bold">Roadmap</a>
-                    <a href="{{ route('career') }}"
-                        class="py-3 px-7 my-4 bg-gray-300 text-gray-800 rounded-full text-xl font-bold">Career
+                        class="py-3 px-7 my-4 bg-violet-800 text-white hover:bg-gray-300 hover:text-gray-800 rounded-full text-xl font-bold duration-300">Career
                         Guide</a>
                 </div>
             </div>

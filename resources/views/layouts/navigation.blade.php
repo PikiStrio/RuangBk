@@ -19,7 +19,7 @@
                     <x-nav-link :href="route('flashsale')" :active="request()->routeIs('flashsale')">
                         {{ __('Flashsale') }}
                     </x-nav-link>
-                    <x-dropdown>
+                    <x-dropdown align='left'>
                         <x-slot name="trigger">
                             <button x-data="{ open: false }"
                                 class="flex items-center space-x-2 text-gray-600 hover:text-violet-800">
@@ -36,26 +36,21 @@
 
                         <x-slot name="content">
                             <div x-show="open" x-transition
-                                class="absolute bg-violet-800 border border-gray-300 rounded-md shadow-lg mt-2 py-2 w-48 z-10">
-                                <x-dropdown-link :href="route('dashboard')"
-                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                    {{ __('Dashboard') }}
-                                </x-dropdown-link>
-                                <x-dropdown-link :href="route('profile.edit')"
-                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                    {{ __('Profile') }}
-                                </x-dropdown-link>
-                                <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <x-dropdown-link :href="route('logout')"
-                                        onclick="event.preventDefault(); this.closest('form').submit();"
-                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                        {{ __('Log Out') }}
-                                    </x-dropdown-link>
-                                </form>
+                                class="absolute bg-white border border-gray-300 rounded-md shadow-lg mt-2 py-4 w-72 z-10 px-4">
+                                <div class="flex flex-col space-y-2">
+                                    <a href="{{ route('dashboard') }}"
+                                        class="text-gray-600 hover:text-violet-800 font-semibold text-sm">
+                                        <h3 class="font-bold ">Math</h3>
+                                        <p class="font-thin">Become a jerome polin</p>
+                                    </a>
+                                    <a href="{{ route('profile.edit') }}"
+                                        class="text-blue-600 hover:text-blue-800 font-semibold text-sm">
+                                        {{ __('Profile') }}
+                                    </a>
+                                </div>
                             </div>
                         </x-slot>
+
                     </x-dropdown>
                     <x-nav-link :href="route('mentor')" :active="request()->routeIs('mentor')">
                         {{ __('Mentor') }}
