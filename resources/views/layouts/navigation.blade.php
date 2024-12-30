@@ -38,14 +38,38 @@
                             <div x-show="open" x-transition
                                 class="absolute bg-white border border-gray-300 rounded-md shadow-lg mt-2 py-4 w-72 z-10 px-4">
                                 <div class="flex flex-col space-y-2">
-                                    <a href="{{ route('dashboard') }}"
-                                        class="text-gray-600 hover:text-violet-800 font-semibold text-sm">
-                                        <h3 class="font-bold ">Math</h3>
-                                        <p class="font-thin">Become a jerome polin</p>
+                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                        <img src="{{ asset('build/assets/icons/math-icon.svg') }}" alt="Logo"
+                                            class="h-10 mx-2">
+                                        <div class="flex flex-col text-sm">
+                                            <h3 class="font-bold group-hover:text-violet-800">Math</h3>
+                                            <p class="font-thin text-gray-600 group-hover:text-black">Become a Jerome
+                                                Polin</p>
+                                        </div>
                                     </a>
-                                    <a href="{{ route('profile.edit') }}"
-                                        class="text-blue-600 hover:text-blue-800 font-semibold text-sm">
-                                        {{ __('Profile') }}
+                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                        <img src="{{ asset('build/assets/icons/science-icon.svg') }}" alt="Logo"
+                                            class="h-10 mx-2">
+                                        <div class="flex flex-col text-sm">
+                                            <h3 class="font-bold group-hover:text-violet-800">Science</h3>
+                                            <p class="font-thin text-gray-600 group-hover:text-black">Become a Isaac Newton</p>
+                                        </div>
+                                    </a>
+                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                        <img src="{{ asset('build/assets/icons/english-icon.svg') }}" alt="Logo"
+                                            class="h-10 mx-2">
+                                        <div class="flex flex-col text-sm">
+                                            <h3 class="font-bold group-hover:text-violet-800">English</h3>
+                                            <p class="font-thin text-gray-600 group-hover:text-black">Become a Translator</p>
+                                        </div>
+                                    </a>
+                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                        <img src="{{ asset('build/assets/icons/indo-icon.svg') }}" alt="Logo"
+                                            class="h-10 mx-2">
+                                        <div class="flex flex-col text-sm">
+                                            <h3 class="font-bold group-hover:text-violet-800">Indonesian</h3>
+                                            <p class="font-thin text-gray-600 group-hover:text-black">Become a Megawati</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
