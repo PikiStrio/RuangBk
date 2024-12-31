@@ -7,6 +7,7 @@ Route::get('/', Controllers\HomeController::class)->name('home');
 Route::get('/FlashSale', Controllers\FlashsaleController::class)->name('flashsale');
 Route::get('/Mentor', Controllers\MentorController::class)->name('mentor');
 Route::get('/Career', Controllers\CareerController::class)->name('career');
+Route::get('/Class/Math', Controllers\ClassMathController::class)->name('classMath');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

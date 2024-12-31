@@ -38,7 +38,7 @@
                             <div x-show="open" x-transition
                                 class="absolute bg-white border border-gray-300 rounded-md shadow-lg mt-2 py-4 w-72 z-10 px-4">
                                 <div class="flex flex-col space-y-2">
-                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                    <a href="{{ route('classMath') }}" class="flex group">
                                         <img src="{{ asset('build/assets/icons/math-icon.svg') }}" alt="Logo"
                                             class="h-10 mx-2">
                                         <div class="flex flex-col text-sm">
