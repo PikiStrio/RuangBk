@@ -8,6 +8,9 @@ Route::get('/FlashSale', Controllers\FlashsaleController::class)->name('flashsal
 Route::get('/Mentor', Controllers\MentorController::class)->name('mentor');
 Route::get('/Career', Controllers\CareerController::class)->name('career');
 Route::get('/Class/Math', Controllers\ClassMathController::class)->name('classMath');
+Route::get('/Class/Science', Controllers\ClassScienceController::class)->name('classScience');
+Route::get('/Class/English', Controllers\ClassEnglishController::class)->name('classEnglish');
+Route::get('/Class/Indonesia', Controllers\ClassIndonesiaController::class)->name('classIndonesia');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

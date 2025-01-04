@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('kelas', function (Blueprint $table) {
             $table->id();
-            $table->string('Title');
-            $table->text('Deskription');
-            $table->bigInteger('Price');
+            $table->string('title');
+            $table->text('deskription');
+            $table->bigInteger('price');
             $table->enum('level', ['beginner', 'intermediate', 'advanced']);
             $table->foreignId('');
             $table->timestamps();

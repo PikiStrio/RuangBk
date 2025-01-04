@@ -44,10 +44,10 @@
             <h1 class="text-md font-bold text-green-500">Come on, fuel your ambition</h1>
             <h1 class="text-4xl font-bold mb-5">From Zero To Hero</h1>
             <div class="flex flex-wrap">
-                <x-card-sm title="Math Class" description="Matematika Interaktif" logo="math-icon" />
-                <x-card-sm title="Indonesian Class" description="Creative Writing" logo="indo-icon" />
-                <x-card-sm title="English Class" description="Public Speaking" logo="english-icon" />
-                <x-card-sm title="Science Class" description="Belajar Sains Mudah" logo="science-icon" />
+                <x-card-sm link="{{route('classMath')}}" title="Math Class" description="Matematika Interaktif" logo="math-icon" />
+                <x-card-sm link="{{route('classIndonesia')}}" title="Indonesian Class" description="Creative Writing" logo="indo-icon" />
+                <x-card-sm link="{{route('classEnglish')}}" title="English Class" description="Public Speaking" logo="english-icon" />
+                <x-card-sm link="{{route('classScience')}}" title="Science Class" description="Belajar Sains Mudah" logo="science-icon" />
             </div>
         </section>
     </div>

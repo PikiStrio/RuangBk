@@ -1,4 +1,4 @@
-@props(['title', 'description', 'logo'])
+@props(['title', 'description', 'logo', 'link'])
 
 <div class="w-full sm:basis-1/2 md:basis-1/4 p-5">
     <div class="bg-white rounded-lg shadow-lg p-6 w-full">
@@ -6,7 +6,7 @@
             <img src="{{ asset('build/assets/icons/' . $logo . '.svg') }}" alt="Logo" class="w-12 h-12">
         </div>
         <div class="w-60 relative group">
-            <a href="">
+            <a href="{{$link}}">
                 <!-- Pastikan div ini menggunakan w-full agar mengisi lebar -->
                 <h2 class="mt-4 text-xl font-bold text-gray-800">
                     {{ $title }}

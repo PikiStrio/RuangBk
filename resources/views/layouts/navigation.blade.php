@@ -47,7 +47,7 @@
                                                 Polin</p>
                                         </div>
                                     </a>
-                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                    <a href="{{ route('classScience') }}" class="flex group">
                                         <img src="{{ asset('build/assets/icons/science-icon.svg') }}" alt="Logo"
                                             class="h-10 mx-2">
                                         <div class="flex flex-col text-sm">
@@ -55,7 +55,7 @@
                                             <p class="font-thin text-gray-600 group-hover:text-black">Become a Isaac Newton</p>
                                         </div>
                                     </a>
-                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                    <a href="{{ route('classEnglish') }}" class="flex group">
                                         <img src="{{ asset('build/assets/icons/english-icon.svg') }}" alt="Logo"
                                             class="h-10 mx-2">
                                         <div class="flex flex-col text-sm">
@@ -63,7 +63,7 @@
                                             <p class="font-thin text-gray-600 group-hover:text-black">Become a Translator</p>
                                         </div>
                                     </a>
-                                    <a href="{{ route('dashboard') }}" class="flex group">
+                                    <a href="{{ route('classIndonesia') }}" class="flex group">
                                         <img src="{{ asset('build/assets/icons/indo-icon.svg') }}" alt="Logo"
                                             class="h-10 mx-2">
                                         <div class="flex flex-col text-sm">
