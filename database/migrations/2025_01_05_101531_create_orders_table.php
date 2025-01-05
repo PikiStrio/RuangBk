@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ulasans', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id'); // Foreign Key untuk siswa
-            $table->foreignId('kelas_id'); // Foreign Key untuk kelas
-            $table->integer('rating'); // Rating, misal skala 1-5
-            $table->text('comment')->nullable(); // Komentar ulasan
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('course_id');
+            $table->enum('status', ['pending', 'paid', 'failed'])->default('pending');
+            $table->string('payment_id')->nullable(); // ID dari gateway pembayaran
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ulasans');
+        Schema::dropIfExists('orders');
     }
 };

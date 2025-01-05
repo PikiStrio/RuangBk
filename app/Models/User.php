@@ -45,4 +45,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function courses() {
+        return $this->hasMany(Kelas::class, 'mentor_id');
+    }
+
+    public function orders() {
+        return $this->hasMany(Order::class);
+    }
+
+    public function enrolledCourses() {
+        return $this->belongsToMany(Kelas_user::class, 'course_user');
+    }
+    public function reviews() {
+        return $this->hasMany(Ulasan::class);
+    }
 }

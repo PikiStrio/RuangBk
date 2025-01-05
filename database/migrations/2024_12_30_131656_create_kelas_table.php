@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('deskription');
-            $table->bigInteger('price');
+            $table->decimal('price');
             $table->enum('level', ['beginner', 'intermediate', 'advanced']);
-            $table->foreignId('');
+            $table->string('image');
+            $table->string('pdf_file');
+            $table->foreignId('mentor_id');
             $table->timestamps();
         });
     }

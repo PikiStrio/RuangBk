@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ulasans', function (Blueprint $table) {
+        Schema::create('kelas_users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id'); // Foreign Key untuk siswa
-            $table->foreignId('kelas_id'); // Foreign Key untuk kelas
-            $table->integer('rating'); // Rating, misal skala 1-5
-            $table->text('comment')->nullable(); // Komentar ulasan
+            $table->foreignId('user_id');
+            $table->foreignId('kelas_id');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ulasans');
+        Schema::dropIfExists('kelas_users');
     }
 };

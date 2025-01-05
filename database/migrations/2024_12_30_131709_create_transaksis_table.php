@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('order_id');
+            $table->string('payment_gateway'); // Contoh: 'Midtrans' atau 'Stripe'
+            $table->decimal('amount', 10, 2);
+            $table->enum('status', ['success', 'failed', 'pending'])->default('pending');
+            $table->timestamp('transaction_date');
             $table->timestamps();
         });
     }
